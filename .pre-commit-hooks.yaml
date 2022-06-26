@@ -1,0 +1,7 @@
+-   id: google-java-style-formatter
+    name: Google Java Code Formatter
+    entry: ./formatter.sh
+    language: script
+    files: \.java$
+    args: []
+
