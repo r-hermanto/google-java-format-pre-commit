@@ -15,6 +15,6 @@ changed_java_files=$(git diff --cached --name-only --diff-filter=ACMR | grep ".*
 if [ -n "$changed_java_files" ]
 then
   echo "Reformat staged java files: $changed_java_files"
-  java -jar ".cache/${GJF_JAR}" --aosp --replace --set-exit-if-changed $changed_java_files
+  java -jar ".cache/${GJF_JAR}" --replace --set-exit-if-changed $changed_java_files
 fi
 
